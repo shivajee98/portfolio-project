@@ -1,4 +1,3 @@
-// src/Header.jsx
 import React, { useState } from 'react';
 
 const Header = () => {
@@ -24,13 +23,13 @@ const Header = () => {
                     <h1 className='text-4xl font-bold'>{brandName.toUpperCase()}</h1>
                 </div>
                 <div className="relative">
-                    <button onClick={toggleDropdown} className="text-white bg-teal-500 hover:bg-teal-700 py-2 px-4 rounded-lg shadow-md focus:outline-none">
+                    <button onClick={toggleDropdown} className="text-white bg-gray-700 hover:bg-gray-900 py-2 px-4 rounded-lg shadow-md focus:outline-none">
                         Menu
                     </button>
                     {isDropdownOpen && (
-                        <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10">
+                        <div className="absolute right-0 mt-2 w-48  rounded-md shadow-lg z-10">
                             {menuLinks.map((links) => (
-                                <a key={links.id} href={links.link} className='block px-4 py-2 text-gray-800 hover:bg-teal-500 hover:text-white transition-colors duration-300'>
+                                <a key={links.id} href={links.link} className='block px-4 py-2 mb-1 text-white bg-gray-700 hover:bg-orange-500 hover:text-white transition-colors duration-300 rounded-md'>
                                     {links.title}
                                 </a>
                             ))}
