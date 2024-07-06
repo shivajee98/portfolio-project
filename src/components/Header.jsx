@@ -23,7 +23,7 @@ const Header = () => {
                     <h1 className='text-4xl font-bold'>{brandName.toUpperCase()}</h1>
                 </div>
                 <div className="relative">
-                    <button onClick={toggleDropdown} className="text-balance bg-auto hover:bg-gray-900 py-2 px-4 rounded-lg shadow-md focus:outline-none">
+                    <button onClick={toggleDropdown} className="text-balance bg-auto hover:bg-auto border-black py-2 px-4 rounded-lg shadow-md focus:outline-none">
                         Menu
                     </button>
                     {isDropdownOpen && (
