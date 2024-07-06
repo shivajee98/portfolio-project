@@ -23,7 +23,7 @@ const App = () => {
     <div>
       <Header />
       <button onClick={toggleDarkMode} className="toggle-button">
-        {darkMode ? 'Switch 2 Light Mode' : 'Switch to Dark Mode'}
+        {darkMode ? 'Switch 2 Light Mode' : 'Switch 2 Dark Mode'}
       </button>
       <Banner/>
     </div>
