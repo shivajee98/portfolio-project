@@ -22,7 +22,7 @@ body {
     border: none;
     cursor: pointer;
     background-color: #e76666;
-    color: white;
+    color:  rgb(128, 203, 120);
     border-radius: 5px;
     transition: background-color 0.3s;
   }
