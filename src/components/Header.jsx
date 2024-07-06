@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <>
-            <div className="mt-4 h-20 items-center main flex justify-between px-4 sm:px-16 text-orange-500 font-bold text-lg">
+            <div className="mt-4 h-20 items-center main flex justify-between px-4 sm:px-16 text-balance font-bold text-lg">
                 <div>
                     <h1 className='text-4xl font-bold'>{brandName.toUpperCase()}</h1>
                 </div>

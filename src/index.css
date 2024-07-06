@@ -12,8 +12,8 @@ body {
   }
   
   body.dark {
-    background-color: #121212;
-    color: #fff;
+    background-color: #cc9292;
+    color: #db0c0c;
   }
   
   .toggle-button {
