@@ -10,7 +10,6 @@ const Banner = () => {
         <div className='w-full sm:w-2/5 md:w-1/2 lg:w-2/5 xl:w-1/2 px-0'>
           <img className='mt-10 w-full rounded-full' src={profileImage} alt='Profile' style={{ maxWidth: '280px', height: 'auto' }} />
         </div>
-
         {/* Text Section */}
         <div className='w-full sm:w-3/5 md:w-1/2 lg:w-3/5 xl:w-1/2 p-7 my-8 sm:my-0'>
           <h2 className='text-xl text-balance'>Hello Everybody, I am</h2>
