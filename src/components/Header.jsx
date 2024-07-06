@@ -5,7 +5,7 @@ const Header = () => {
   const [brandName, setBrandName] = useState("Shivajee");
   const [menuLinks, setMenuLinks] = useState([
     { title: 'Home', link: '/home', id: 1 },
-    { title: 'About', link: '/google.com', id: 2 },
+    { title: 'About', link: '/about', id: 2 },
     { title: 'Skills', link: '/skills', id: 3 },
     { title: 'Portfolio', link: '/portfolio', id: 4 },
     { title: 'Contact', link: '/contact', id: 5 },
