@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-    background-color: #f0f0f0;
-    color: #000;
+    background-color: #f8fafc; /* Light Mode Background */
+    color: #1e293b; /* Light Mode Text */
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -12,8 +12,8 @@ body {
 }
 
 body.dark {
-    background-color: #cc9292;
-    color: #db0c0c;
+    background-color: #1e293b; /* Dark Mode Background */
+    color: #f8fafc; /* Dark Mode Text */
 }
 
 .toggle-button {
@@ -21,8 +21,8 @@ body.dark {
     margin: 20px;
     border: none;
     cursor: pointer;
-    background-color: #e76666;
-    color: rgb(242, 243, 242);
+    background-color: #64748b; /* Slate Gray Button Background */
+    color: #f8fafc;
     border-radius: 50%;
     transition: background-color 0.3s;
     display: flex;
@@ -33,7 +33,7 @@ body.dark {
 }
 
 body.dark .toggle-button {
-    background-color: #4e1b1b;
+    background-color: #fcfdff;
 }
 
 .mode-icon {
