@@ -55,8 +55,8 @@ const Header = () => {
       <div className="relative" ref={dropdownRef}>
         <button 
           onClick={toggleDropdown} 
-          className={`py-2 px-4 rounded-full ${darkMode ? 'bg-white' : 'bg-white'}`}>
-          <img className="w-6 h-6" src={menu} alt="menu icon" />
+          className={`py-2 px-5 rounded-3xl ${darkMode ? 'bg-white hover:bg-slate-300' : 'bg-white hover:bg-slate-300'}`}>
+          <img className="w-6 h-6 " src={menu} alt="menu icon" />
         </button>
         {isDropdownOpen && (
           <div className="absolute right-0 mt-2 bg-white  rounded-3xl">
@@ -64,7 +64,7 @@ const Header = () => {
               <Link
                 key={link.id}
                 to={link.link}
-                className="px-4 py-2 mb-1 rounded-md flex items-center hover:bg-slate-300"
+                className="px-4 py-2 mb-1 rounded-3xl flex items-center hover:bg-slate-300"
                 onClick={handleLinkClick}
               >
                 {link.icon && <img src={link.icon} alt={`${link.title} icon`} className="w-8 h-8 mr-2" />}
