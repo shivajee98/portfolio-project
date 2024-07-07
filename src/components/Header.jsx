@@ -69,15 +69,15 @@ const Header = () => {
             <img className="w-6 h-6" src={menu} alt="menu icon" />
           </button>
           {isDropdownOpen && (
-            <div className={`absolute right-0 mt-2 rounded-3xl shadow-lg ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
+            <div className={`absolute right-0 mt-2 rounded-3xl shadow-lg ${darkMode ? 'bg-gray-300' : 'bg-white'}`}>
               {menuLinks.map((link) => (
                 <Link
                   key={link.id}
                   to={link.link}
-                  className={`px-4 py-2 mb-1 rounded-3xl flex items-center ${darkMode ? 'text-white hover:bg-gray-300' : 'text-black hover:bg-gray-500'}`}
+                  className={`px-4 py-2  rounded-3xl flex items-center ${darkMode ? 'text-white hover:bg-gray-500' : 'text-black hover:bg-gray-500'}`}
                   onClick={handleLinkClick}
                 >
-                  {link.icon && <img src={link.icon} alt={`${link.title} icon`} className="w-8 h-8 mr-2" />}
+                  {link.icon && <img src={link.icon} alt={`${link.title} icon`} className="w-8 h-8" />}
                 </Link>
               ))}
             </div>
