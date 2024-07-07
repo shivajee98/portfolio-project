@@ -56,7 +56,7 @@ const Header = () => {
         <button 
           onClick={toggleDropdown} 
           className={`py-2 px-4 rounded-full ${darkMode ? 'bg-white' : 'bg-white'}`}>
-          <img className="w-8 h-8" src={menu} alt="menu icon" />
+          <img className="w-6 h-6" src={menu} alt="menu icon" />
         </button>
         {isDropdownOpen && (
           <div className="absolute right-0 mt-2 bg-white  rounded-3xl">
