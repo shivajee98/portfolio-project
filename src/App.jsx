@@ -8,24 +8,12 @@ import About from './components/About.jsx';
 import Skills from './components/Skills.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import Contact from './components/Contact.jsx';
-import lightMode from './assets/lightMode.png';
-import darkModeIcon from './assets/darkMode.png';
-import { useTheme } from './utils/ThemeContext.jsx';
 
 const App = () => {
-  const { darkMode, toggleDarkMode } = useTheme();
-
   return (
     <Router>
       <div>
         <Header />
-        <button onClick={toggleDarkMode} className="toggle-button">
-          <img
-            className='mode-icon'
-            src={darkMode ? lightMode : darkModeIcon}
-            alt="Toggle dark mode"
-          />
-        </button>
         <Routes>
           <Route path="/" element={<Banner />} />
           <Route path="/home" element={<Banner />} />
