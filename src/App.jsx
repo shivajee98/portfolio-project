@@ -8,6 +8,8 @@ import About from './components/About.jsx';
 import Skills from './components/Skills.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import Contact from './components/Contact.jsx';
+import lightMode from './assets/lightMode.png';
+import darkModeIcon from './assets/darkMode.png';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(() => {
@@ -29,16 +31,20 @@ const App = () => {
       <div>
         <Header />
         <button onClick={toggleDarkMode} className="toggle-button">
-          {darkMode ? 'Switch 2 Light Mode' : 'Switch 2 Dark Mode'}
+          <img 
+            className='mode-icon' 
+            src={darkMode ? lightMode : darkModeIcon} 
+            alt="Toggle dark mode" 
+          />
         </button>
         <Routes>
           <Route path="/" element={<Banner />} /> 
           <Route path="/home" element={<Banner />} /> 
-          <Route path="/about" element={<About />} /> {/* Route for Blogs.jsx */}
-          <Route path="/skills" element={<Skills />} /> {/* Route for Blogs.jsx */}
-          <Route path="/portfolio" element={<Portfolio />} /> {/* Route for Blogs.jsx */}
-          <Route path="/contact" element={<Contact />} /> {/* Route for Blogs.jsx */}
-          <Route path="/blogs" element={<Blogs />} /> {/* Route for Blogs.jsx */}
+          <Route path="/about" element={<About />} /> 
+          <Route path="/skills" element={<Skills />} /> 
+          <Route path="/portfolio" element={<Portfolio />} /> 
+          <Route path="/contact" element={<Contact />} /> 
+          <Route path="/blogs" element={<Blogs />} /> 
         </Routes>
       </div>
     </Router>
