@@ -12,7 +12,7 @@ const Banner = () => {
         </div>
         {/* Text Section */}
         <div className='w-full sm:w-3/5 md:w-1/2 lg:w-3/5 xl:w-1/2 p-7 my-8 sm:my-0'>
-          <h2 className='text-xl text-balance'>Hello Everybody, I am the only</h2>
+          <h2 className='text-xl text-balance'>Hello Everybody, I am the only one</h2>
           <h1 className='text-4xl leading-loose font-bold text-balance'>Shivajee</h1>
           <h2 className='text-xl font-semibold text-balance'>Software Developer</h2>
         </div>
