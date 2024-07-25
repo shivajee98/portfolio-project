@@ -6,7 +6,7 @@ const Skills = () => {
       <div className="title-container w-full max-w-2xl bg-white p-4 shadow-lg rounded-t-lg">
         <h2 className="text-2xl font-bold text-center text-black md:text-left ">My Skills</h2>
       </div>
-      <div className="content-container w-full max-w-2xl bg-white p-4 shadow-lg rounded-b-lg">
+      <div className="content-container w-full max-w-2xl bg-gray-400 p-4 shadow-lg rounded-b-lg">
         <p className="text-base md:text-lg text-gray-700 ">
           <b>Comming Soon... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quidem, eum rerum consequuntur libero nemo, animi veritatis molestiae repudiandae ratione quisquam? Eaque necessitatibus dicta vel ratione quidem sed iste dolor!
           Officiis dicta autem obcaecati delectus itaque animi reprehenderit similique facere tempore tempora provident alias, hic beatae voluptates veritatis eos. Cupiditate illum voluptates eveniet sunt consequatur voluptatem earum, porro illo laudantium.
