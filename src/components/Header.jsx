@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import menu from '../assets/menu.png';
@@ -50,35 +49,36 @@ const Header = () => {
 
   return (
     <div className="mt-4 h-20 flex items-center justify-between px-4 sm:px-16 font-bold text-lg">
-      <div className=" font-bold hover:text-rose-900 text-2xl sm:text-5xl">
-          <Link to={menuLinks[0].link}>{brandName.toUpperCase()}</Link>
+      <div className="font-bold hover:text-rose-900 text-2xl sm:text-5xl">
+        <Link to={menuLinks[0].link}>{brandName.toUpperCase()}</Link>
       </div>
       <div className="flex items-center">
-        <button onClick={toggleDarkMode} className="ml-4">
+        <button onClick={toggleDarkMode} className="ml-4 transform transition-transform duration-300 hover:scale-110">
           <img
-            className="w-8 h-8 mr-2"
+            className="w-10 h-10 mr-2"
             src={darkMode ? lightMode : darkModeIcon}
-            alt="Toggle dark mode"/>
+            alt="Toggle dark mode"
+          />
         </button>
         <div className='flex'>
-          <button className='bg-indigo-800 text-white rounded-md px-1 mr-3 ml-3 hidden sm:inline-block'>SignUp</button >
-          <button className='ml-1 bg-indigo-800 rounded-md px-1 text-white '>Login</button>
+          <button className='bg-indigo-800 text-white rounded-md px-3 py-1 mr-3 ml-3 hidden sm:inline-block transform transition-transform duration-300 hover:scale-110'>SignUp</button>
+          <button className='ml-1 bg-indigo-800 rounded-md px-3 py-1 text-white transform transition-transform duration-300 hover:scale-110'>Login</button>
         </div>
         <div className="relative" ref={dropdownRef}>
           <button
             onClick={toggleDropdown}
-            className={`ml-4 py-2 px-5 rounded-full  `}>
-            <img className={`w-9 h-9 border ${darkMode ? ' border-white ' : ' border-black '}  rounded-full`} src={menu} alt="menu icon" />
+            className="ml-4 py-2 px-5 rounded-full transform transition-transform duration-300 hover:scale-110">
+            <img className={`w-9 h-9 border ${darkMode ? 'border-white' : 'border-black'} rounded-full`} src={menu} alt="menu icon" />
           </button>
           {isDropdownOpen && (
-            <div className={`absolute right-0 mt-2 `}>
+            <div className="absolute right-0 mt-2">
               {menuLinks.map((link) => (
                 <Link
                   key={link.id}
                   to={link.link}
-                  className={`px-4 py-2 rounded-full flex items-center mb-3 ${darkMode ? 'text-white border border-4 border-yellow-400 bg-gray-300 hover:bg-white' : 'border border-3 border-black text-black hover:bg-gray-300'}`}
+                  className={`px-4 py-2 rounded-full flex items-center mb-3 ${darkMode ? 'text-white border border-4 border-yellow-400 bg-gray-300 hover:bg-white' : 'border border-3 border-black text-black hover:bg-gray-300'} transform transition-transform duration-300 hover:scale-110`}
                   onClick={handleLinkClick}>
-                  {link.icon && <img src={link.icon} alt={`${link.title} icon`} className="w-5 sm:w-8" />}
+                  {link.icon && <img src={link.icon} alt={`${link.title} icon`} className="w-4 sm:w-6" />}
                 </Link>
               ))}
             </div>
