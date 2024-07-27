@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    background-color: #f8fafc; /* Light Mode Background */
+    background-color: #ffffff; /* Light Mode Background */
     color: #1e293b; /* Light Mode Text */
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 body.dark {
-    background-color: #1e293b; /* Dark Mode Background */
+    background-color: #030712; /* Dark Mode Background */
     color: #f8fafc; /* Dark Mode Text */
 }
 

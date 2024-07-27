@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 import profileImage from '../assets/profileImage.jpeg';
 
 const Banner = () => {
@@ -10,11 +11,28 @@ const Banner = () => {
         <div className='w-full sm:w-2/5 md:w-1/2 lg:w-2/5 xl:w-1/2 px-0'>
           <img className='mt-10 mb-2 ml-3 w-full rounded-full' src={profileImage} alt='Profile' style={{ maxWidth: '220px', height: 'auto' }} />
         </div>
+
         {/* Text Section */}
         <div className='w-full sm:w-3/5 md:w-1/2 lg:w-3/5 xl:w-1/2 p-7 my-8 sm:my-0'>
-          <h2 className='text-xl text-balance'>Hello Everybody, I am</h2>
-          <h1 className='text-4xl leading-loose font-bold text-balance'>Shivajee</h1>
-          <h2 className='text-xl font-semibold text-balance'>Software Developer</h2>
+          <h2 className='text-2xl text-yellow-400'>Hello Everybody, I am</h2>
+          <h1 className='text-5xl leading-loose font-bold text-yellow-500'>Shivajee</h1>
+          <h2 className='text-2xl font-semibold text-red-500'>
+            <Typewriter
+              words={[
+                'Web Developer',
+                'Software Engineer',
+                'Tech Enthusiast',
+                'Open Source Contributor',
+                'Problem Solver'
+              ]}
+              loop={0}
+              cursor
+              cursorStyle='_'
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </h2>
         </div>
 
       </div>
