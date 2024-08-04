@@ -52,16 +52,14 @@ const About = () => {
             </h2>
           </div>
           <ul className="mt-4 text-gray-700 dark:text-gray-300">
-            <li>Name: Daria Taylor</li>
-            <li>Birthdate: 21 June 1990</li>
-            <li>Nationality: English</li>
-            <li>Experience: 7 years</li>
-            <li>Address: Istanbul</li>
-            <li>Languages: English, French</li>
-            <li>Phone: +34 21 18 40 10</li>
-            <li>Email: example@domain.com</li>
-            <li>Skype: daria.taylor</li>
-            <li>Freelance: Available</li>
+            <li>Name: Shivajee</li>
+            <li>Birthdate: 14 October 2004</li>
+            <li>Nationality: Indian</li>
+            <li>Experience: 2.5 years</li>
+            <li>Address: Meerut</li>
+            <li>Languages: Hindi, English</li>
+            <li>Phone: +91 7070782390</li>
+            <li>Email: shivajee141004@gmail.com</li>
           </ul>
         </div>
       </div>
@@ -70,7 +68,7 @@ const About = () => {
       <div className="skills-section p-8  shadow-lg rounded-lg my-4">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Programming Skills</h2>
         <div className="skill-bar">
-          <span className="skill-label">HTML</span>
+          <span className="skill-label">React</span>
           <div className="skill-percentage" style={{ width: '90%' }}>90%</div>
         </div>
         <div className="skill-bar">
@@ -78,19 +76,19 @@ const About = () => {
           <div className="skill-percentage" style={{ width: '75%' }}>75%</div>
         </div>
         <div className="skill-bar">
-          <span className="skill-label">jQuery</span>
+          <span className="skill-label">java</span>
           <div className="skill-percentage" style={{ width: '80%' }}>80%</div>
         </div>
         <div className="skill-bar">
-          <span className="skill-label">WordPress</span>
+          <span className="skill-label">python</span>
           <div className="skill-percentage" style={{ width: '90%' }}>90%</div>
         </div>
         <div className="skill-bar">
-          <span className="skill-label">Webpack</span>
+          <span className="skill-label">DevOps</span>
           <div className="skill-percentage" style={{ width: '70%' }}>70%</div>
         </div>
         <div className="skill-bar">
-          <span className="skill-label">Angular</span>
+          <span className="skill-label">AWS</span>
           <div className="skill-percentage" style={{ width: '75%' }}>75%</div>
         </div>
       </div>
@@ -100,22 +98,13 @@ const About = () => {
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="service-item  shadow-lg">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Website Development</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Web Development</h3>
           </div>
           <div className="service-item  shadow-lg">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Digital Experience</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">DevOps Services</h3>
           </div>
           <div className="service-item  shadow-lg">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Content Marketing</h3>
-          </div>
-          <div className="service-item  shadow-lg">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Social Media Design</h3>
-          </div>
-          <div className="service-item  shadow-lg">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Shared Web Hosting</h3>
-          </div>
-          <div className="service-item  shadow-lg">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Brand Identity</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Android Deveopment</h3>
           </div>
         </div>
       </div>
