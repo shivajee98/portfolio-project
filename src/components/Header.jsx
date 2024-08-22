@@ -44,6 +44,7 @@ const Header = () => {
       <div className="font-bold hover:text-rose-900 text-2xl sm:text-5xl">
         <Link to={menuLinks[0].link}>{brandName.toUpperCase()}</Link>
       </div>
+      <h6 className='text-red-500'>🚧🚧  Site Still Under Construction  🚧🚧</h6>
       <div className="flex items-center">
         <button onClick={toggleDarkMode} className="ml-4 transform transition-transform duration-200 hover:scale-110">
           <FontAwesomeIcon icon={darkMode ? faSun : faMoon} className={`w-6 h-10 ${darkMode? 'text-yellow-400' : 'text-black' }`} />
