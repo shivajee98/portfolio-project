@@ -70,7 +70,7 @@ const Contact = () => {
             <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-4 md:flex-row">
               <input
                 type="text"
-                name="user_name"
+                name="name"
                 id="name"
                 placeholder="Your Name"
                 value={formData.name}
@@ -80,7 +80,7 @@ const Contact = () => {
               />
               <input
                 type="email"
-                name="user_email"
+                name="email"
                 id="email"
                 placeholder="Your Email"
                 value={formData.email}
