@@ -20,13 +20,12 @@ const Banner = () => {
             <h2 className='font-semibold text-yellow-400'>
               <Typewriter
                 words={[
-                  'Shivajee',
+                  'Shivajee The Boss',
                   'Web Developer',
                   'Software Engineer',
                   'Tech Enthusiast',
                   'Open Source Contributor',
                   'Problem Solver',
-                  'Embedded Coder'
                 ]}
                 loop={0}
                 cursor
