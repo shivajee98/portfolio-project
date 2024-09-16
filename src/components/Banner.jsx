@@ -20,7 +20,7 @@ const Banner = () => {
             <h2 className='font-semibold text-yellow-400'>
               <Typewriter
                 words={[
-                  'Shivajee The Boss',
+                  'Shivajee',
                   'Web Developer',
                   'Software Engineer',
                   'Tech Enthusiast',
