@@ -25,7 +25,8 @@ const Banner = () => {
                   'Software Engineer',
                   'Tech Enthusiast',
                   'Open Source Contributor',
-                  'Problem Solver'
+                  'Problem Solver',
+                  'Embedded Coder'
                 ]}
                 loop={0}
                 cursor
