@@ -1,15 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { useTheme } from '../utils/ThemeContext';
+import { useTheme } from '../utils/ThemeContext'; // Assuming this provides theme-related data
 
 const Contact = () => {
-  const { darkMode } = useTheme();  // Use useTheme() to access the context
+  const { darkMode } = useTheme(); // Extracting darkMode from the Theme context
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prev) => ({ ...prev, [id]: value }));
+  };
+
+  const sendMail = (e) => {
+    e.preventDefault();
+    const { name, email, message } = formData;
+    const serviceID = 'service_qw0yoxu';
+    const templateID = 'template_8kqlu98';
+    const userID = 'elp7kgLwhyTbGi7mD';
+
+    emailjs.send(serviceID, templateID, { from_name: name, from_email: email, message }, userID)
+      .then((res) => {
+        setFormData({ name: '', email: '', message: '' });
+        alert('Your message was sent successfully!');
+      })
+      .catch((err) => {
+        console.error('Failed to send the email:', err);
+      });
+  };
 
   return (
     <div className={`flex flex-col items-center justify-center p-6`}>
-      <div className='text-5xl mb-10 font-bold'>Let's Connect</div>
+      <div className="text-5xl mb-10 font-bold">Let's Connect</div>
       <div className="w-full max-w-5xl flex flex-col md:flex-row shadow-lg rounded-lg overflow-hidden">
         {/* Contact Information Section */}
         <div className={`md:w-1/3 ${darkMode ? 'bg-gray-800' : 'bg-gray-200'} p-6 flex flex-col justify-center`}>
@@ -38,23 +66,38 @@ const Contact = () => {
         {/* Send a Message Section */}
         <div className={`md:w-2/3 ${darkMode ? 'bg-gray-900' : 'bg-gray-100'} p-6 flex flex-col justify-center`}>
           <h2 className="text-2xl font-bold mb-4">Send a Message</h2>
-          <form className="flex flex-col space-y-4">
+          <form onSubmit={sendMail} className="flex flex-col space-y-4">
             <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-4 md:flex-row">
               <input
                 type="text"
+                name="user_name"
+                id="name"
                 placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
                 className={`flex-1 p-2 ${darkMode ? 'bg-gray-800 border-gray-700 text-white' : 'bg-gray-100 border-gray-300 text-black'} border rounded-md focus:outline-none focus:border-yellow-500`}
+                required
               />
               <input
                 type="email"
+                name="user_email"
+                id="email"
                 placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
                 className={`flex-1 p-2 ${darkMode ? 'bg-gray-800 border-gray-700 text-white' : 'bg-gray-100 border-gray-300 text-black'} border rounded-md focus:outline-none focus:border-yellow-500`}
+                required
               />
             </div>
             <textarea
+              name="message"
+              id="message"
               placeholder="Your Message"
+              value={formData.message}
+              onChange={handleChange}
               className={`p-2 ${darkMode ? 'bg-gray-800 border-gray-700 text-white' : 'bg-gray-100 border-gray-300 text-black'} border rounded-md focus:outline-none focus:border-yellow-500`}
               rows="6"
+              required
             />
             <button
               type="submit"
